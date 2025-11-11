@@ -1,0 +1,663 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Surya KR - Creative Portfolio Showcase Template">
+    <meta name="keywords"
+        content="personal, portfolio new, html, one page, bootstrap, new html template, design, creative, onepage, clean, modern">
+    <meta name="author" content="Themesvila">
+    <!-- PAGE TITLE -->
+    <title>Surya KR - Personal Portfolio</title>
+    <!-- FAV ICON -->
+    <link rel="apple-touch-icon" href="assets/images/Swhitelogo.png">
+    <link rel="shortcut icon" type="image/png" href="assets/images/Swhitelogo.png">
+    <!-- ALL GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link
+        href="../../../css2-1?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="assets/fonts/remixicon.css">
+    <!-- MAGNIFIC CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- NICE SELECT CSS -->
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- SPACING CSS -->
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <!-- MAIN STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Custom skills badges styles (neutral colors, non-purple) -->
+    <style>
+        /* Skill badges layout */
+        .skill-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px 28px;
+            padding: 10px 0 40px;
+        }
+
+        .skill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 18px;
+            border-radius: 40px;
+            border: 2px solid #2c3e50;
+            /* neutral dark border */
+            color: #2c3e50;
+            /* text color */
+            background: rgba(44, 62, 80, 0.04);
+            font-weight: 600;
+            font-size: 15px;
+            min-height: 48px;
+            box-shadow: 0 6px 18px rgba(44, 62, 80, 0.06);
+            transition: transform .18s ease, box-shadow .18s ease;
+        }
+
+        .skill-badge img {
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+            opacity: 0.95;
+        }
+
+        .skill-badge:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 30px rgba(44, 62, 80, 0.12);
+        }
+
+        /* make badges responsive */
+        @media (max-width: 576px) {
+            .skill-badge {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- START PRELOADER AREA-->
+    <div class="preloader">
+        <svg viewbox="0 0 1000 1000" preserveaspectratio="none">
+            <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+        <div class="preloader-heading">
+            <div class="load-text">
+                <span>L</span>
+                <span>o</span>
+                <span>a</span>
+                <span>d</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
+            </div>
+        </div>
+    </div>
+    <!-- END PRELOADER AREA -->
+    <!-- START MENU DESIGN AREA -->
+    <header class="main-header">
+        <div class="header-upper">
+            <div class="container">
+                <div class="header-inner d-flex align-items-center">
+                    <!-- START LOGO DESIGN AREA -->
+                    <div class="logo-outer">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="Logo" title="Logo"></a>
+                        </div>
+                    </div>
+                    <!-- / END LOGO DESIGN AREA -->
+                    <!-- START NAV DESIGN AREA -->
+                    <div class="nav-outer clearfix mx-auto">
+                        <!-- Main Menu -->
+                        <nav class="main-menu navbar-expand-lg">
+                            <div class="navbar-header">
+                                <div class="mobile-logo">
+                                    <a href="index.html">
+                                        <img src="assets/images/logo.png" alt="Logo" title="Logo">
+                                    </a>
+                                </div>
+                                <!-- Toggle Button -->
+                                <button type="button" class="navbar-toggle" data-bs-toggle="collapse"
+                                    data-bs-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <ul class="navigation onepage clearfix">
+                                    <li><a class="nav-link-click" href="#about">About</a></li>
+                                    <li><a class="nav-link-click" href="#skills">Skills</a>
+                                    <li><a class="nav-link-click" href="#works">Projects</a></li>
+                                    <li><a class="nav-link-click" href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- / END NAV DESIGN AREA -->
+                    </div>
+                    <div class="menu-btns">
+                        <a href="#contact" class="theme-btn">Hire Me<i class="ri-shake-hands-line"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- / END MENU DESIGN AREA -->
+    <!-- START ABOUT DESIGN AREA -->
+    <section id="" class="about-area">
+        <div class="container">
+            <div class="row">
+                <!-- START ABOUT IMAGE DESIGN AREA -->
+                <div class="col-lg-4">
+                    <div class="about-image-part wow fadeInUp delay-0-3s">
+                        <div class="about-image-part2">
+                            <img src="assets/images/about/suryaprofile.jpg" alt="About Me">
+                        </div>
+                        <h2>Surya KR</h2>
+                        <p>I am a Web Developer based in Tamil Nadu.</p>
+                        <div class="about-social text-center">
+                            <ul>
+                                <li><a href="https://www.instagram.com/s_u_r_y_a_1906?igsh=MWVvc2JzNmMya3MybQ=="><i
+                                            class="ri-instagram-line"></i></a></li>
+                                <li><a
+                                        href="https://www.linkedin.com/in/surya-kr-4a1a45264?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i
+                                            class="ri-linkedin-fill"></i></a></li>
+                                <li><a href="https://github.com/suryarajan114"><i class="ri-github-line"></i></a></li>
+                                <li><a href="https://www.facebook.com/share/14NGWuLLRcn/"><i
+                                            class="ri-facebook-circle-fill"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- / END ABOUT IMAGE DESIGN AREA -->
+                <!-- START ABOUT TEXT DESIGN AREA -->
+                <div class="col-lg-8">
+                    <div class="about-content-part wow fadeInUp delay-0-2s">
+                        <p>Hello There!</p>
+                        <h2>
+                            I’m <span>Surya KR</span>, a web developer crafting <span>user-friendly experiences</span>
+                            with clean, efficient code.
+                        </h2>
+                        <div class="adress-field">
+                            <ul>
+                                <li><i class="ri-circle-fill"></i>Available for Freelancing</li>
+                            </ul>
+                        </div>
+                        <div class="hero-btns">
+                            <a href="assets/images/Resume/SURYA KR RESUME.pdf" class="theme-btn">Download CV <i
+                                    class="ri-download-line"></i></a>
+                        </div>
+                    </div>
+                    <div class="about-content-part-bottom wow fadeInUp delay-0-2s">
+                        <div class="company-list">
+                            <div class="scroller" data-direction="left" data-speed="slow">
+                                <div class="scroller__inner">
+                                    <h4>Aspiering Full-Stack Developer</h4>
+                                    <h4>Open Source Enthusiast</h4>
+                                    <h4>Check Out My Projects</h4>
+                                    <h4>Web Developer</h4>
+                                    <h4>Clean, Efficient Code</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / END ABOUT TEXT DESIGN AREA -->
+            </div>
+        </div>
+    </section>
+    <!-- / END ABOUT DESIGN AREA -->
+
+    <!-- START PORTFOLIO DESIGN AREA -->
+    <section id="about" class="projects-area">
+        <div class="container">
+            <div class="container-inner">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="section-title text-center wow fadeInUp delay-0-2s">
+                            <h2>LET ME INTRODUCE MYSELF!</h2>
+                            <p>I fell in love with programming and I have learnt quite a bit, I think… 🤷‍♂️</p>
+
+                            <p> I am Good in classics like PHP, Javascript and MySQL.</p>
+
+                            <p> My field of Interest's are building new Web Technologies and Products and also in areas
+                                related to Database Management Systems.</p>
+
+                            <p>Whenever possible, I also apply my passion for developing products with Modern
+                                Javascript Library and Modern Javascript Frameworks like React.js</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="resume-download text-center wow fadeInUp delay-0-4s">
+                            <a href="assets/images/Resume/SURYA KR RESUME.pdf" class="theme-btn" download>Download My
+                                Resume <i class="ri-download-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // END PORTFOLIO DESIGN AREA -->
+
+    <!-- START SKILL DESIGN AREA -->
+    <section id="skills" class="skill-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
+                        <p>Pro Skills</p>
+                        <h2>Let’s Explore My Skills</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="skill-items-wrap">
+                        <div class="skill-badges">
+                            <div class="skill-badge wow fadeInUp delay-0-2s">
+                                <img src="assets/images/skills/php.png" alt="PHP">
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-3s">
+                                <img src="assets/images/skills/mysql.png" alt="MySQL">
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-4s">
+                                <img src="assets/images/skills/html.png" alt="HTML5">
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-5s">
+                                <img src="assets/images/skills/css.png" alt="CSS3">
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-2s">
+                                <img src="assets/images/skills/js.png" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-3s">
+                                <img src="assets/images/skills/bs.png" alt="Bootstrap">
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-4s">
+                                <img src="assets/images/skills/react.png" alt="React.js">
+                                <span>React.js</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-5s">
+                                <img src="assets/images/skills/phpmailer.png" alt="PHPMailer">
+                                <span>PHPMailer (SMTP)</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-2s">
+                                <img src="assets/images/skills/composer.png" alt="Composer">
+                                <span>Composer</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-3s">
+                                <img src="assets/images/skills/api.png" alt="REST & JSON">
+                                <span>REST APIs & JSON</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="section-title text-center mb-60 wow fadeInUp delay-0-2s">
+                        <h2>Tools I Use!</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="skill-items-wrap">
+                        <div class="skill-badges">
+                            <div class="skill-badge wow fadeInUp delay-0-2s">
+                                <img src="assets/images/skills/windows.png" alt="PHP">
+                                <span>Windows</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-3s">
+                                <img src="assets/images/skills/vs.png" alt="MySQL">
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-4s">
+                                <img src="assets/images/skills/git.png" alt="HTML5">
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-5s">
+                                <img src="assets/images/skills/xampp.png" alt="CSS3">
+                                <span>XAMPP</span>
+                            </div>
+                            <div class="skill-badge wow fadeInUp delay-0-2s">
+                                <img src="assets/images/skills/chrome.png" alt="JavaScript">
+                                <span>Chrome</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / END SKILL DESIGN AREA -->
+    <!-- START PORTFOLIO DESIGN AREA -->
+    <section id="works" class="projects-area">
+        <div class="container">
+            <div class="container-inner">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="section-title text-center wow fadeInUp delay-0-2s">
+                            <h2>Works & Projects</h2>
+                            <p>Check out some of my web development projects, meticulously crafted with clean code,
+                                each one reflecting the passion and dedication I poured into every detail.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row project-masonry-active">
+                    <div class="col-lg-4 col-md-6 item branding game">
+                        <div class="project-item style-two wow fadeInUp delay-0-3s">
+                            <div class="project-image">
+                                <img src="assets/images/projects/Project1.png" alt="Project">
+                                <a href="https://github.com/YOUR-USERNAME/YOUR-PROJECT-1" class="details-btn"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                            <div class="project-content">
+                                <span class="sub-title" style="font-weight: bold;">Restaurant Pre-Booking System</span>
+                                <p>A dynamic restaurant website featuring a categorized menu and an automated table
+                                    booking system. Users can select dates, times, and guest counts, with the system
+                                    automatically calculating a 50% advance payment. Built with PHP, MySQL, HTML5, and
+                                    CSS3.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 item design marketing graphics">
+                        <div class="project-item style-two wow fadeInUp delay-0-4s">
+                            <div class="project-image">
+                                <img src="assets/images/projects/Project2.png" alt="Project">
+                                <a href="https://github.com/YOUR-USERNAME/YOUR-PROJECT-2" class="details-btn"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                            <div class="project-content">
+                                <span class="sub-title" style="font-weight: bold;">Web Development & Digital Marketting
+                                    Agency</span>
+                                <p>Built a responsive website for a Digital Marketing Agency using HTML, CSS, and
+                                    JavaScript. The backend, powered by PHP and MySQL, captures leads from the contact
+                                    form. A secure admin dashboard allows the agency to review all client inquiries.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 item game graphics">
+                        <div class="project-item style-two wow fadeInUp delay-0-5s">
+                            <div class="project-image">
+                                <img src="assets/images/projects/Project3.png" alt="Project">
+                                <a href="https://github.com/YOUR-USERNAME/YOUR-PROJECT-3" class="details-btn"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <i class="ri-arrow-right-up-line"></i>
+                                </a>
+                            </div>
+                            <div class="project-content">
+                                <span class="sub-title" style="font-weight: bold;">Drag And Drop Interface</span>
+                                <p>An interactive drag-and-drop interface built with JavaScript and PHP. Allows users
+                                    to easily reorder items or upload files by dragging them onto a designated area. The
+                                    backend processes the dropped items and updates the database accordingly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- // END PORTFOLIO DESIGN AREA -->
+    <style>
+        /* Reduces space BETWEEN the title/paragraph and the white box */
+        #contact .section-title {
+            margin-bottom: 25px;
+            /* Original was 40px */
+        }
+
+        /* Adjust padding for the new 3-column layout */
+        .contact-content-part {
+            padding-top: 40px;
+            /* A balanced padding */
+            padding-bottom: 20px;
+            /* A balanced padding */
+        }
+
+        /* On small screens (tablets/phones), stack the contact items and add space */
+        @media (max-width: 991px) {
+
+            /* Find the columns inside the contact part */
+            .contact-content-part .row>.col-lg-4 {
+                padding-bottom: 20px;
+                /* Add space below each item when stacked */
+            }
+
+            /* Remove space from the last item */
+            .contact-content-part .row>.col-lg-4:last-child {
+                padding-bottom: 0;
+            }
+        }
+    </style>
+    <section id="contact" class="contact-area">
+        <div class="container">
+            <div class="container-inner">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="section-title text-center wow fadeInUp delay-0-2s">
+                            <h2>Get In Touch</h2>
+                            <p>Have a project in mind or just want to say hi? Feel free to reach out. I'm always open to
+                                discussing new opportunities and collaborating on exciting projects.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="contact-content-part text-center wow fadeInUp delay-0-2s">
+                            <div class="row">
+
+                                <div class="col-lg-4 col-12">
+                                    <div class="single-contact">
+                                        <a href="">
+                                            <div class="contact-icon">
+                                                <i class="ri-map-pin-line"></i>
+                                            </div>
+                                            <h2>Location</h2>
+                                            <p>Madurai, Tamil Nadu, India</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12">
+                                    <div class="single-contact">
+                                        <div class="contact-icon">
+                                            <i class="ri-mail-line"></i>
+                                        </div>
+                                        <h2>Email</h2>
+                                        <p>surya19062004@gmail.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12">
+                                    <div class="single-contact">
+                                        <div class="contact-icon">
+                                            <i class="ri-phone-line"></i>
+                                        </div>
+                                        <h2>Phone</h2>
+                                        <p>+91 97156 04030</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- START MAP -->
+    <style>
+        /* Mobile fixes for the contact cards: make them full-width, centered and reduce excessive spacing */
+        @media (max-width: 767px) {
+
+            /* Ensure the centered container becomes full width on small screens */
+            #contact .col-lg-10 {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            /* Make each contact column take full width and remove extra gutters */
+            #contact .contact-content-part .row {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 12px !important;
+            }
+
+            #contact .contact-content-part .col-lg-4 {
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            }
+
+            /* Make the single-contact boxes look like cards and center their content */
+            #contact .single-contact {
+                text-align: center !important;
+                padding: 18px 14px !important;
+                border: none !important;
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03) !important;
+                border-radius: 10px !important;
+                background: #ffffff !important;
+                margin: 0 auto !important;
+            }
+
+            #contact .single-contact .contact-icon {
+                display: block !important;
+                margin: 0 auto 10px !important;
+                font-size: 22px !important;
+                color: #2c8b6b !important;
+            }
+
+            #contact .single-contact h2 {
+                font-size: 16px !important;
+                margin-bottom: 6px !important;
+            }
+
+            #contact .single-contact p {
+                margin: 0 !important;
+                font-size: 15px !important;
+                white-space: normal !important;
+                word-wrap: break-word !important;
+                overflow-wrap: anywhere !important;
+                word-break: break-word !important;
+            }
+        }
+    </style>
+    <section class="map_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <h2 class="map_title">View My Live Map Location</h2>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/search?q=kadachanenthal+map+link&rlz=1C1CHBF_en-GBIN1106IN1106&oq=kada&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgoIARAuGLEDGIAEMgYIAhBFGDkyCggDEAAYsQMYgAQyCggEEC4YsQMYgAQyBggFEEUYPTIGCAYQRRg8MgYIBxBFGDzSAQgzMTk0ajBqN6gCCLACAfEF5az-ey7EIac&sourceid=chrome&ie=UTF-8"
+                            style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <h2 class="close_btn">Hide Map</h2>
+                    </div>
+                </div><!-- END COL-->
+            </div><!--- END ROW -->
+        </div><!--- END CONTAINER -->
+    </section>
+    <!-- END  MAP -->
+    <!-- START FOOTER DESIGN AREA -->
+    <footer class="main-footer">
+        <div class="footer-bottom pt-50 pb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="copyright-text">
+                            <p>
+                                Copyright @2024, <a href="index.html">Surya KR</a> All
+                                Rights Reserved.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="copyright-text extra-copyright">
+                            <p>
+                                Designed and Developed by Surya KR ❤️
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- / END FOOTER DESIGN AREA -->
+    <!-- START SCROOL UP DESIGN AREA -->
+    <div class="progress-wrap cursor-pointer">
+        <i class="ri-arrow-up-double-line"></i>
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+    </div>
+    <!-- / END SCROOL UP DESIGN AREA -->
+    <!-- JQUERY JS -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- BOOTSTRAP JS-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- APPEAR JS -->
+    <script src="assets/js/appear.min.js"></script>
+    <!-- jquery smooth-scroll JS -->
+    <script src="assets/js/smooth-scroll.js"></script>
+    <!-- GSAP JS -->
+    <script src="assets/js/gsap.min.js"></script>
+    <!-- MAGNIFICANT JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- SLICK JS-->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- NICE SELECT JS-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- IMAGE LOADER JS-->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- ISOTOPE JS-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--  WOW ANIMATION JS-->
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/form-contact.js"></script>
+    <!-- SCRIPT JS-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
